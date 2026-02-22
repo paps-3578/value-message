@@ -1,104 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>You are valued</title>
-    <link rel="stylesheet" href="style.css" />
-    <!-- Importing fonts from Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
-</head>
-<body>
-    <!-- Cute Doll SVG Background -->
-    <svg class="doll-background" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
-        <!-- Head -->
-        <circle cx="100" cy="60" r="35" fill="#f4d4a8" stroke="#d4a574" stroke-width="2"/>
-        
-        <!-- Hair -->
-        <path d="M 65 45 Q 100 20 135 45 Q 135 30 100 15 Q 65 30 65 45" fill="#c9956f" stroke="#a67c52" stroke-width="1.5"/>
-        
-        <!-- Eyes -->
-        <circle cx="90" cy="55" r="5" fill="#6b4423"/>
-        <circle cx="110" cy="55" r="5" fill="#6b4423"/>
-        <circle cx="92" cy="53" r="2" fill="#ffffff"/>
-        <circle cx="112" cy="53" r="2" fill="#ffffff"/>
-        
-        <!-- Blush -->
-        <circle cx="75" cy="65" r="6" fill="#f0a8d8" opacity="0.6"/>
-        <circle cx="125" cy="65" r="6" fill="#f0a8d8" opacity="0.6"/>
-        
-        <!-- Mouth -->
-        <path d="M 95 75 Q 100 78 105 75" stroke="#d4716f" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-        
-        <!-- Body -->
-        <rect x="80" y="100" width="40" height="50" rx="8" fill="#f0a8d8" stroke="#d4716f" stroke-width="2"/>
-        
-        <!-- Dress pattern -->
-        <line x1="85" y1="110" x2="115" y2="110" stroke="#d4716f" stroke-width="1" opacity="0.5"/>
-        <line x1="85" y1="125" x2="115" y2="125" stroke="#d4716f" stroke-width="1" opacity="0.5"/>
-        <line x1="85" y1="140" x2="115" y2="140" stroke="#d4716f" stroke-width="1" opacity="0.5"/>
-        
-        <!-- Arms -->
-        <rect x="50" y="110" width="30" height="12" rx="6" fill="#f4d4a8" stroke="#d4a574" stroke-width="1.5"/>
-        <rect x="120" y="110" width="30" height="12" rx="6" fill="#f4d4a8" stroke="#d4a574" stroke-width="1.5"/>
-        
-        <!-- Legs -->
-        <rect x="85" y="155" width="12" height="40" rx="6" fill="#f4d4a8" stroke="#d4a574" stroke-width="1.5"/>
-        <rect x="103" y="155" width="12" height="40" rx="6" fill="#f4d4a8" stroke="#d4a574" stroke-width="1.5"/>
-        
-        <!-- Shoes -->
-        <ellipse cx="91" cy="200" rx="8" ry="6" fill="#c9956f" stroke="#a67c52" stroke-width="1"/>
-        <ellipse cx="109" cy="200" rx="8" ry="6" fill="#c9956f" stroke="#a67c52" stroke-width="1"/>
-        
-        <!-- Heart accent on dress -->
-        <path d="M 100 130 L 103 127 Q 105 125 107 127 L 107 132 Q 105 134 100 138 Q 95 134 93 132 L 93 127 Q 95 125 97 127 Z" fill="#ff9db5" opacity="0.8"/>
-    </svg>
-
-    <div class="container">
-        <h1 class="heading">You are deeeply valued.</h1>
-        <p class="body-text">You are quitely loved.</p> 
-        <p class="body-text">Exactly as you are.</p>
-    </div>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cute Doll Background</title>
     <style>
-        /* Responsive Design Styles */
         body {
             margin: 0;
-            font-family: 'Poppins', sans-serif;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f9f9f9;
             position: relative;
-            overflow: hidden;
         }
-        .doll-background {
+        .background {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             opacity: 0.1;
-            z-index: -1;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle fill="peach" cx="50" cy="50" r="40"/><path fill="mauve" d="M35 70 Q50 85, 65 70 T95 70 Q80 50, 50 50 Q20 50, 35 70"/></svg>');
+            background-size: cover;
         }
-        .container {
+        .content {
             position: relative;
-            z-index: 1;
+            z-index: 10;
             text-align: center;
             padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
         }
-        .heading {
-            font-size: 2.5em;
+        h1 {
+            font-family: Arial, sans-serif;
             color: #333;
         }
-        .body-text {
-            font-size: 1.2em;
-            color: #666;
-        }
-        @media (max-width: 600px) {
-            .heading {
-                font-size: 2em;
-            }
-            .body-text {
-                font-size: 1em;
-            }
+        p {
+            font-family: Arial, sans-serif;
+            color: #555;
         }
     </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="content">
+        <h1>Welcome to the Cute Doll Page!</h1>
+        <p>This is a lovely place filled with cute dolls. Enjoy your stay!</p>
+    </div>
 </body>
 </html>
