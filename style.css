@@ -8,7 +8,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: hwb(41 79% 12%); /* neutral cream */
+    background-color: cream; /* neutral cream */
     font-family: 'Poppins', sans-serif;
 }
 
@@ -30,7 +30,7 @@ body {
 
 .body-text {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: #5a5a5a; /* soft grey */
     line-height: 1.6;
 }
