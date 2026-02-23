@@ -1,52 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cute Doll Background</title>
-    <style>
-        body {
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #f9f9f9;
-            position: relative;
-        }
-        .background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            opacity: 0.1;
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle fill="peach" cx="50" cy="50" r="40"/><path fill="mauve" d="M35 70 Q50 85, 65 70 T95 70 Q80 50, 50 50 Q20 50, 35 70"/></svg>');
-            background-size: cover;
-        }
-        .content {
-            position: relative;
-            z-index: 10;
-            text-align: center;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.8);
-            border-radius: 10px;
-        }
-        h1 {
-            font-family: Arial, sans-serif;
-            color: #333;
-        }
-        p {
-            font-family: Arial, sans-serif;
-            color: #555;
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>You are valued</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <div class="background"></div>
-    <div class="content">
-        <h1>Welcome to the Cute Doll Page!</h1>
-        <p>This is a lovely place filled with cute dolls. Enjoy your stay!</p>
+
+    <!-- Soft petal/particle drifts -->
+    <div class="petals" aria-hidden="true">
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
     </div>
+
+    <div class="container">
+
+        <!-- Doll — faded into background behind the message box -->
+        <div class="doll-wrap" aria-hidden="true">
+            <svg class="doll" viewBox="0 0 120 160" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <ellipse cx="60" cy="38" rx="28" ry="30" fill="#c9a98a"/>
+                <ellipse cx="36" cy="55" rx="10" ry="22" fill="#c9a98a"/>
+                <ellipse cx="84" cy="55" rx="10" ry="22" fill="#c9a98a"/>
+                <ellipse cx="60" cy="44" rx="22" ry="24" fill="#f5e6d8"/>
+                <ellipse cx="52" cy="40" rx="3.5" ry="4" fill="#7a5c4e"/>
+                <ellipse cx="68" cy="40" rx="3.5" ry="4" fill="#7a5c4e"/>
+                <circle cx="53.5" cy="39" r="1.2" fill="#fff"/>
+                <circle cx="69.5" cy="39" r="1.2" fill="#fff"/>
+                <ellipse cx="46" cy="47" rx="5" ry="3" fill="#e8b4a0" opacity="0.55"/>
+                <ellipse cx="74" cy="47" rx="5" ry="3" fill="#e8b4a0" opacity="0.55"/>
+                <ellipse cx="60" cy="48" rx="2" ry="1.2" fill="#d4a090" opacity="0.6"/>
+                <path d="M54 54 Q60 60 66 54" stroke="#b07060" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+                <rect x="55" y="66" width="10" height="10" rx="3" fill="#f5e6d8"/>
+                <path d="M30 130 Q32 90 55 80 Q60 78 65 80 Q88 90 90 130 Z" fill="#d4a0a8"/>
+                <path d="M55 80 Q60 88 65 80" stroke="#c08090" stroke-width="1.5" fill="none"/>
+                <path d="M55 85 Q36 100 32 118" stroke="#f5e6d8" stroke-width="10" stroke-linecap="round" fill="none"/>
+                <path d="M65 85 Q84 100 88 118" stroke="#f5e6d8" stroke-width="10" stroke-linecap="round" fill="none"/>
+                <path d="M48 128 Q45 145 44 158" stroke="#f5e6d8" stroke-width="9" stroke-linecap="round" fill="none"/>
+                <path d="M72 128 Q75 145 76 158" stroke="#f5e6d8" stroke-width="9" stroke-linecap="round" fill="none"/>
+                <ellipse cx="44" cy="158" rx="8" ry="4.5" fill="#b07060"/>
+                <ellipse cx="76" cy="158" rx="8" ry="4.5" fill="#b07060"/>
+                <path d="M70 18 Q78 10 82 18 Q78 22 70 18Z" fill="#e8b4a0"/>
+                <path d="M70 18 Q62 10 58 18 Q62 22 70 18Z" fill="#e8b4a0"/>
+                <circle cx="70" cy="18" r="3.5" fill="#d4a0a8"/>
+            </svg>
+        </div>
+
+        <!-- Message box -->
+        <div class="message-box">
+            <div class="messages">
+                <h1 class="msg msg-1">You are deeply valued.</h1>
+                <p class="msg msg-2">You are quietly loved.</p>
+                <p class="msg msg-3">Exactly as you are.</p>
+            </div>
+            <div class="divider" aria-hidden="true">
+                <span>✦</span><span>✦</span><span>✦</span>
+            </div>
+        </div>
+
+    </div>
+
 </body>
 </html>
